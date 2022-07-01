@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Countdown Timer -->
+    <div>
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+    </div>
+    <!-- End Countdown Timer -->
+
+    <!-- Image Slideshow -->
+    <div class="slideshow-container">
+
+        <!-- Slides -->
+        <div class="slide fade">
+            <div class="number-text">1 / 3</div>
+            <img src="./img/car1.jpg">
+            <div class="caption-text">Car 1</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number-text">2 / 3</div>
+            <img src="./img/car2.jpg">
+            <div class="caption-text">Car 2</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number-text">3 / 3</div>
+            <img src="./img/car3.jpg">
+            <div class="caption-text">Car 3</div>
+        </div>
+
+        <!-- Next and Previous Buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <!-- Dots -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- End Image Slideshow -->
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
