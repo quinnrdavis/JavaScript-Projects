@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.form-container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Gill Sans", sans-serif;
+}
+
+li {
+    padding-top: 5px;
+    list-style: none;
+}
+
+input {
+    padding-top: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 5px;
+    background-color: darkseagreen;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #568f56;
+}
