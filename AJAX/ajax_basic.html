@@ -15,16 +15,20 @@
         </div>
         <script type="text/javascript">
 
+            //Initializes the XMLHttpRequest object
             var ajax = new XMLHttpRequest();
 
+            //Specifies the type of request and the resource
             ajax.open('GET', 'content.html');
 
+            //Callback that fires when the request has retrieved the content and displays it
             ajax.onreadystatechange = function () {
                 if (ajax.readyState = 4) {
                     document.getElementById("content").innerHTML = ajax.responseText;
                 }
             }
 
+            //Onclick function to replace the button with the content
             function getContent() {
                 ajax.send();
                 document.getElementById("btn_content").style.display = 'none';
